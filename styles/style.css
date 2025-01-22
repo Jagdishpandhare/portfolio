@@ -305,3 +305,63 @@ a:hover {
     bottom: 0;
     width: 100%;
 }
+
+/* Media queries */
+@media (max-width: 768px) {
+    /* Adjust navigation styles for smaller screens */
+    #navbar {
+      flex-direction: column; /* Stack navigation items vertically */
+      align-items: flex-start; /* Align items to the left */
+    }
+  
+    #navbar ul {
+      flex-direction: column;
+    }
+  
+    #navbar ul li {
+      margin-left: 0;
+      margin-bottom: 10px; /* Add spacing between items */
+    }
+  
+    /* Adjust project container styles */
+    #projects-container {
+      flex-direction: column; /* Stack projects vertically */
+      align-items: center; /* Center projects */
+    }
+  
+    .project {
+      width: 80%; /* Adjust width for smaller screens */
+      margin: 15px 0; /* Adjust margins */
+    }
+  
+    /* Adjust contact section styles */
+    .contact-content {
+      flex-direction: column; /* Stack form and social links vertically */
+      align-items: center; /* Center content */
+    }
+  
+    .contact-form {
+      width: 100%; /* Make form full width */
+      margin-bottom: 20px; /* Add spacing between form and social links */
+    }
+  
+    .contact-social {
+      width: 100%; /* Make social links full width */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Further adjustments for smaller screens */
+    #about-me-container {
+      height: auto; /* Remove fixed height */
+      padding: 10px; /* Reduce padding */
+    }
+  
+    #projects-container {
+      padding: 10px; /* Reduce padding */
+    }
+  
+    .project {
+      width: 90%; /* Adjust width for very small screens */
+    }
+  }
