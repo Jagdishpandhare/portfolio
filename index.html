@@ -74,6 +74,7 @@
         </div>
         
         <div class="skills-section">
+         <div id="skills"></div>
          <h2>Skills I have learned</h2>
          <div class="skills-icons">
              <img src="styles\logos\HTML5_logo_and_wordmark.svg" alt="HTML5">
@@ -87,33 +88,51 @@
              <img src="styles\logos\Bootstrap_logo.svg" alt="Bootstrap">
          </div>
       </div>
-         <h1 id="contact">Contact Me</h1>
-         <form action="submit.php" method="post">
-            <table>
-               <tr>
-                  <td><label for="name">Name:</label></td>
-                  <td><input type="text" id="name" name="name"></td>
-               </tr>
-               <tr>
-                  <td><label for="email">Email:</label></td>
-                  <td><input type="email" id="email" name="email"></td>
-               </tr>
-               <tr>
-                  <td><label for="message">Message:</label></td>
-                  <td><textarea id="message" name="message"></textarea></td>
-               </tr>
-               <tr>
-                  <td></td>
-                  <td><button type="submit">Send Message</button></td>
-               </tr>
-            </table>
-         </form>
-         <h3 >instgream</h3>
-         <p >Follow me on instagram <a href="https://www.instagram.com/jagdishpandhare/">@jagdishpandhare</a></p>
-         <h3 >linkied</h3>
-         <p>Connect with me on linkedin <a href="https://www.linkedin.com/in/jagdishpandhare/">@jagdishpandhare</a></p>
-     </body>
 
+      <div id="contact-container">
+         <div id="contact"></div>
+         <h1>Contact Me</h1>
+         <div class="contact-content">
+             <!-- Form on the left -->
+             <form action="submit.php" method="post" class="contact-form">
+                 <div class="form-group">
+                     <label for="name">Name:</label>
+                     <input type="text" id="name" name="name" required>
+                 </div>
+                 <div class="form-group">
+                     <label for="email">Email:</label>
+                     <input type="email" id="email" name="email" required>
+                 </div>
+                 <div class="form-group">
+                     <label for="message">Message:</label>
+                     <textarea id="message" name="message" required></textarea>
+                 </div>
+                 <button type="submit">Send Message</button>
+             </form>
+     
+             <!-- Social links on the right -->
+             <div class="contact-social">
+                 <h3>Connect with Me</h3>
+                 <ul class="social-links">
+                     <li>
+                         <img src="styles\logos\gmail.png" alt="Email" class="social-icon">
+                         <a href="mailto:jagdishpandhare@example.com" target="_blank">jagdishpandhare@example.com</a>
+                     </li>
+                     <li>
+                         <img src="styles\logos\Instagram_logo_2016.svg" alt="Instagram" class="social-icon">
+                         <a href="https://www.instagram.com/the.jd.007?igsh=MWxyeDFkY3A0eW1iaA==" target="_blank">Follow me on Instagram</a>
+                     </li>
+                     <!--<li>
+                         <img src="styles\logos\LinkedIn_icon.svg" alt="LinkedIn" class="social-icon">
+                         <a href="https://www.linkedin.com/in/jagdishpandhare/" target="_blank">Connect on LinkedIn</a>
+                     </li><-->
+                 </ul>
+             </div>
+         </div>
+     </div>
+     
+     
+     
 
        <footer id="footer">
           <p>&copy; 2025 Jagdish Pandhare</p>

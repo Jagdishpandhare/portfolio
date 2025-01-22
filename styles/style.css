@@ -14,7 +14,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #4f4e4e;
     color: #fff;
 }
 
@@ -30,11 +30,12 @@ body {
 #navbar ul li a {
     color: #fff;
     text-decoration: none;
+    padding: 5px 10px;
     
 }
 a:hover {
     color: #f5f5f5;
-    background-color: rgb(100,23,22);
+    background-color: rgb(6, 6, 6);
 }
 
 #about-me-container{
@@ -163,4 +164,144 @@ a:hover {
 
 .skills-icons img:hover {
     opacity: 1;
+}
+
+/* contact section */
+
+/* Contact container styling */
+#contact-container {
+    width: 100%;
+    padding: 40px;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+#contact-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Flexbox layout for form and social links */
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Styling for the form */
+.contact-form {
+    width: 60%;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Social links styling */
+.contact-social {
+    width: 35%;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.contact-social h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Social links styling */
+.social-links a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+    margin-left: 10px;
+    padding: 5px;
+    transition: color 0.3s, background-color 0.3s, border-radius 0.3s;
+    border-radius: 4px; /* Rounded corners for the hover background */
+}
+
+.social-links a:hover {
+    color: #ffffff; /* Text becomes white */
+    background-color: #0056b3; /* Subtle readable blue */
+    font-weight: bold; /* Makes the text bold for emphasis */
+}
+
+
+/* Styling for icons */
+.social-icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+/* Footer styling */
+#footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
 }
