@@ -1,50 +1,166 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box; 
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    padding: 0.5em 0;
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
 }
 
-/* Header Styles */
-header {
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
     background-color: #333;
     color: #fff;
-    padding: 1em 0;
-    text-align: center;
 }
 
-header nav a {
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li {
+    margin-left: 20px;
+}
+
+#navbar ul li a {
     color: #fff;
     text-decoration: none;
-    margin: 0 1em;
+    
+}
+a:hover {
+    color: #f5f5f5;
+    background-color: rgb(100,23,22);
 }
 
-header nav a:hover {
-    text-decoration: underline;
+#about-me-container{
+    width: auto;
+    height: 540px;
+    background-color: beige;
+    background-image: url('Images/water.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #333;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Main Content Styles */
-main {
-    padding: 2em;
-}
-
-section {
-    margin-bottom: 2em;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: #fff;
+#about-me-container h1{
+    font-size: 30px;
+    margin-bottom: 20px;
     text-align: center;
-    padding: 1em 0;
-    position: fixed;
+    color: white;
+}
+
+#about-me-container p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+#projects-container {
     width: 100%;
-    bottom: 0;
+    max-width: auto;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #333;
+    background-color: #ccc; /* Light gray background */
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next row */
+    justify-content: space-between; /* Space between items */
+    align-items: flex-start; /* Align items to the top */
+}
+
+#projects-container h1 {
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Container for each project */
+.project {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits text color */
+    display: flex;
+    flex-direction: column; /* Ensures vertical stacking */
+    align-items: center; /* Centers content horizontally */
+    background-color: #f4f4f4; /* Light background for the project box */
+    width: 23%; /* Each project takes up 23% of the container's width */
+    height: 495px; /* Fixed height */
+    margin: 10px;
+    border: 2px solid #333;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+}
+
+/* Styling for the image */
+.project img {
+    width: 100%; /* Ensures the image spans the full width of the project box */
+    height: 60%; /* Fixed height for images */
+    object-fit: cover; /* Ensures the image scales properly without distortion */
+    border-bottom: 2px solid #333; /* Adds a divider between image and content */
+}
+
+/* Content area (title and description) */
+.project-content {
+    padding: 10px; /* Adds padding around the content */
+    text-align: center; /* Centers the text */
+}
+
+.project-content h3 {
+    margin: 5px 0; /* Spacing for the title */
+    font-size: 18px; /* Title font size */
+}
+
+.project-content p {
+    margin: 5px 0; /* Spacing for the description */
+    font-size: 14px; /* Description font size */
+}
+
+/* Hover effect */
+.project:hover {
+    transform: translateY(-5px); /* Adds slight movement on hover */
+    box-shadow: 3px 3px 10px rgba(230, 226, 226, 0.2); /* Enhances shadow on hover */
+}
+
+
+.skills-section {
+    text-align: center;
+    margin-top: 25px;
+    border: 2px solid #333;
+    padding: 20px;
+}
+
+.skills-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-icons img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    margin: 10px; /* Adjust spacing as needed */
+    opacity: 0.7; /* Add a subtle fade-in effect */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.skills-icons img:hover {
+    opacity: 1;
 }
